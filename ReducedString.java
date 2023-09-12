@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//needs correction
 public class ReducedString {
     public static void main(String[] args) {
             Scanner sc= new Scanner(System.in);
