@@ -9,7 +9,7 @@ public class highestFreqCharacter {
         for(int i = 0; i < str.length(); i++)
         {
             char ch = str.charAt(i);
-            if(hm.containsKey(ch)==true)
+            if(hm.containsKey(ch))
                 hm.put(ch,hm.get(ch)+1);
             else
                 hm.put(ch,hm.getOrDefault(ch,1));
