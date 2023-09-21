@@ -3,7 +3,7 @@ public class DistinctprimeFactors_SOE
 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        DistinctPrimeFactors(6);
+        DistinctPrimeFactors(3);
 
     }
     public static void DistinctPrimeFactors(int n)
