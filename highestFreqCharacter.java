@@ -18,17 +18,13 @@ public class highestFreqCharacter {
         int max = 0;
         for(Character key: hm.keySet())
         {
-            Integer value = hm.get(key);
-            if(value>max)
-                max = value;
+            if(hm.get(key)>max)
+                max = hm.get(key);
         }
 final int temp = max;
         hm.forEach((key, value) -> {
             if(value == temp)
             System.out.print(key + "=" + value + " ");
         });
-
-
-
     }
 }

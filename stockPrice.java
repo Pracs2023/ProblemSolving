@@ -1,6 +1,5 @@
 import java.util.Scanner;
-//chlra par TLE leet par
-//optimised hai do line ka Integer.MIN_VALUE wgera use krke
+//chlra par TLE LC par
 public class stockPrice {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,6 +11,7 @@ public class stockPrice {
         int[] prices = new int[n];
         for(int i = 0; i < n; i++)
             prices[i] = sc.nextInt();
+        optimised(prices,n);
         for(int i = 0 ; i < n ; i ++)
         {
             start = i;
@@ -25,6 +25,17 @@ public class stockPrice {
                 }
                 end--;
             }
+        }
+        System.out.println(max);
+    }
+    //O(n)
+    public static void optimised(int[] prices ,int n)
+    {
+        int max = 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < prices.length; i++) {
+            min = Math.min(min, prices[i]);
+            max = Math.max(max, prices[i] - min);
         }
         System.out.println(max);
     }
